@@ -1,0 +1,8 @@
+hash: c45108718440e4aee7e243a5d13d2b2b73c0b66b0e671586c47095fb67e8418a
+updated: 2016-09-21T15:06:21.979157497+08:00
+imports:
+- name: github.com/pquerna/ffjson
+  version: 9d7075fb37d35c5b005b4cd3bdd1074e345a5d4e
+- name: github.com/sendgrid/rest
+  version: d37acbf70185e33da36a233f4df95848b052427c
+testImports: []

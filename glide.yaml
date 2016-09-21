@@ -1,0 +1,5 @@
+package: github.com/azumads/sdl
+import:
+- package: github.com/sendgrid/rest
+  version: ^2.2.0
+- package: github.com/pquerna/ffjson
