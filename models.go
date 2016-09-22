@@ -6,7 +6,8 @@ type Auth struct {
 }
 
 type Session struct {
-	Id string `json:"sessionId"`
+	Id             string `json:"sessionId"`
+	LastUpdateTime int    `json:"lastUpdateTime"`
 }
 
 type Task struct {
