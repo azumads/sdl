@@ -215,3 +215,15 @@ func GetTask(id int) (task *Task, err error) {
 	fmt.Printf("%+v\n", task)
 	return
 }
+
+func DownloadTaskFile(id int) (fileName string, err error) {
+	token := Login()
+	baseURL := host + "/files/asset"
+	queryParams := make(map[string]string)
+	queryParams["token"] = token.Id
+	queryParams["resourceId"] = strconv.Itoa(id)
+	queryParams["assetLocationType"] = "TARGET"
+	baseURL = rest.AddQueryParameters(baseURL, queryParams)
+	fileName, err = DownloadFromUrl(baseURL)
+	return
+}
